@@ -8,7 +8,7 @@ When I'm not in front of a screen, I'm probably motorcycling, playing music at [
 
 You can also find me on [Instagram](https://www.instagram.com/magamig23/), [LinkedIn](https://www.linkedin.com/in/magamig/) and [GitHub](https://github.com/magamig).
 
-## Education
+### Education
 
 **IMLEX Computational Imaging MSc**\
 University of Eastern Finland (Joensuu, Finland)\

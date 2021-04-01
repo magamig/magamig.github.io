@@ -5,7 +5,6 @@ languageCode = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-publishDir = "docs"
 
 [params]
   description = ""
