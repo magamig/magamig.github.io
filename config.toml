@@ -1,0 +1,49 @@
+baseURL = ""
+title = "Miguel Magalhães"
+theme = "etch"
+languageCode = "en-US"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = ""
+  copyright = ""
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "places"
+    name = "Places"
+    title = "Places"
+    url = "/places/"
+    weight = 12
+  
+  # [[menu.main]]
+  #   identifier = "photos"
+  #   name = "Photos"
+  #   title = "Photos"
+  #   url = "/photos/"
+  #   weight = 15
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = 20
+
+[permalinks]
+  posts = "/posts/:title/"
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true

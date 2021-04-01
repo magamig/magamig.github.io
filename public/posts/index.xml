@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Miguel Magalhães</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Miguel Magalhães</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 15 Mar 2021 21:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Investing</title>
+      <link>/posts/investing/</link>
+      <pubDate>Mon, 15 Mar 2021 21:00:00 +0100</pubDate>
+      
+      <guid>/posts/investing/</guid>
+      <description>kiss - keep it simple stupid
+emergency fund ETF happiness / € </description>
+    </item>
+    
+    
+    
+    <item>
+      <title>The Inner Workings</title>
+      <link>/posts/the-inner-workings/</link>
+      <pubDate>Mon, 15 Mar 2021 21:00:00 +0100</pubDate>
+      
+      <guid>/posts/the-inner-workings/</guid>
+      <description>If creating your own personal page has been on your mind for a while, I hope this blog post inspires you to go through with it. This is not intented to be a manual, but an overview of my own process.
+As I&amp;rsquo;ve previously mentioned , it is important to define some guidelines of what we want to archieve (even if later on we need to change them). As such, this webpage is intended to be lightweight and fast.</description>
+    </item>
+    
+    
+    
+    <item>
+      <title>Hello, World!</title>
+      <link>/posts/hello-world/</link>
+      <pubDate>Mon, 01 Mar 2021 21:00:00 +0100</pubDate>
+      
+      <guid>/posts/hello-world/</guid>
+      <description>Let&amp;rsquo;s start with the computer programming cliché phrase Hello, World!
+It&amp;rsquo;s 2021 and I&amp;rsquo;m currently living in France. &amp;ldquo;Inspired by the french writers Victor Hugo, Voltaire and Gustave Flaubert, I&amp;rsquo;ve decided to start my own blog!&amp;quot; - not really, but I admit it would look cooler. This will just be the place to share my personal projects, ideas and experiences.
+Before starting any project, such as this blog, it is important to define what you want to archieve, your goals.</description>
+    </item>
+    
+    
+    
+    
+    
+    
+  </channel>
+</rss>
