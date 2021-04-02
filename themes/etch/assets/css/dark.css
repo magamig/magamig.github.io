@@ -54,6 +54,12 @@ main#content header#post-header time {
     color: #a7a7a7;
 }
 
+@media (max-width: 767.99px) {
+    header#banner {
+        border-bottom: 1px solid #c9cacc;
+    }
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
