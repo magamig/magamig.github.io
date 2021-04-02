@@ -2,7 +2,7 @@
 title: "Places"
 ---
 
-I've lived in Portugal, Hungary, Finland, and I'm currently based in France. Map of visited countries is below.
+I've lived in Portugal, Hungary, Finland, and I'm currently based in France. The map with the countries I've visited is below.
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

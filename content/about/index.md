@@ -4,7 +4,7 @@ title: "About"
 
 Currently studying [IMLEX Computational Imaging MSc](https://imlex.org/) at Université Jean Monnet in France. Using this blog to put things into writing. My topics of interest revolve around images and maps. 
 
-When I'm not in front of a screen, I'm probably motorcycling, playing music at [TUM](https://www.facebook.com/tunauniversitariaminho), walking in the woods or having a beer with friends.
+When I'm not in front of a screen, I'm probably motorcycling, playing music at [TUM](https://www.facebook.com/tunauniversitariaminho), walking in the woods, or having a beer with friends.
 
 You can also find me on [Instagram](https://www.instagram.com/magamig23/), [LinkedIn](https://www.linkedin.com/in/magamig/) and [GitHub](https://github.com/magamig).
 
