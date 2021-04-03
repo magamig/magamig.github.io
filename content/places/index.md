@@ -16,7 +16,6 @@ I've lived in Portugal, Hungary, Finland, and I'm currently based in France. The
     });
     map.fitBounds([[-30, -70], [60, 100]]);
     map.touchZoom.disable();
-    map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     function style(feature) {
         return {
