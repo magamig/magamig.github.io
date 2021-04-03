@@ -8,7 +8,10 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
     color: #313a3d;
     width: 100%;
     margin: 0 auto;
@@ -129,6 +132,11 @@ main#content h5,
 main#content h6 {
     margin: 0;
     line-height: 2;
+    font-weight: 500;
+}
+
+header h2 {
+    font-weight: 600;
 }
 
 main#content h3 {
@@ -177,7 +185,7 @@ main#content ul#posts time {
 /* single.html styles */
 main#content header#post-header h1 {
     display: block;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.15;
 }
 
