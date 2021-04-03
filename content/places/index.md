@@ -12,7 +12,8 @@ I've lived in Portugal, Hungary, Finland, and I'm currently based in France. The
     "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB","MNE",
     "CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST"];
     var map = L.map('map', { 
-        attributionControl: false
+        attributionControl: false,
+        dragging: !L.Browser.mobile
     });
     map.fitBounds([[-30, -70], [60, 100]]);
     map.scrollWheelZoom.disable();
