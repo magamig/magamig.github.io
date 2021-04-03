@@ -12,11 +12,11 @@ I've lived in Portugal, Hungary, Finland, and I'm currently based in France. The
     "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB","MNE",
     "CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST"];
     var map = L.map('map', { 
-        zoomControl: false,
         attributionControl: false
-    })
+    });
     map.fitBounds([[-30, -70], [60, 100]]);
     map.touchZoom.disable();
+    map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     function style(feature) {
         return {
@@ -34,8 +34,8 @@ I've lived in Portugal, Hungary, Finland, and I'm currently based in France. The
         fill: true,
         fillColor: '#fff',
         fillOpacity: 1
-    }
+    };
     fetch('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson')
         .then(response => response.json())
-        .then(data => L.geoJson(data, { style: style }).addTo(map))
+        .then(data => L.geoJson(data, { style: style }).addTo(map));
 </script>

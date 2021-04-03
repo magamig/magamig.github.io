@@ -321,6 +321,10 @@ footer#footer {
     background: rgba(128,128,128,0.1);
 }
 
+#map a {
+    text-decoration: none !important;
+}
+
 hr {
     margin: 2em 0;
 }
