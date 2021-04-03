@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "/"
 title = "Miguel Magalhães"
 theme = "etch"
 languageCode = "en-US"
