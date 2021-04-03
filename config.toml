@@ -10,7 +10,7 @@ publishDir = "docs"
 [params]
   description = ""
   copyright = ""
-  dark = "auto"
+  dark = "off" #auto
   highlight = true
 
 [menu]
