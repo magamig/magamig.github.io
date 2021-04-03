@@ -13,9 +13,6 @@
 
     {{ $resources = $resources | append (resources.Get "css/main.css") -}}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
     {{ $dark := .Site.Params.dark | default "auto" -}}
     {{ if not (eq $dark "off") -}}
         {{ $resources = $resources | append (resources.Get "css/dark.css" | resources.ExecuteAsTemplate "dark.css" .) -}}

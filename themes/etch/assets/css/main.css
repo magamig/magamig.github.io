@@ -8,7 +8,6 @@ html {
 
 body {
     font-size: 1.6rem;
-    /* font-family: "Lato", sans-serif; */
     font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
