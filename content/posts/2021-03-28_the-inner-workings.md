@@ -6,7 +6,7 @@ location: "France"
 
 If creating your personal page has been on your mind for a while, I hope this blog post inspires you to go through with it. This is not intended to be a manual, but an overview of my own process.
 
-As I've [previously mentioned](/posts/hello-world/), it is important to define some guidelines of what we want to achieve (even if later on we need to change them). As such, this webpage is intended to be lightweight and fast. Therefore, I will try to just include just the necessary resources. I will not follow this religiously like some people that won't even include images.
+As I've [previously mentioned](/posts/hello-world/), it is important to define some guidelines of what we want to achieve (even if later on we need to change them). As such, this webpage is intended to be lightweight and fast. Therefore, I will try to just include the necessary resources. I will not follow this religiously like some people that won't even include images.
 
 Since the main focus is to share some textual information with you, the website is structured in a way that makes it easy to read. First, the text is centered in the middle of the screen. Secondly, the line length follows the [studies on the optimal line length](https://www.humanfactors.com/newsletters/optimal_line_length.asp), meaning they are not too long nor too short.
 

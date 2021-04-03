@@ -8,7 +8,7 @@ Let's start with the computer programming *cliché* phrase:
 
 `> Hello, World`
 
-It's 2021 and I'm currently living in France. *"Inspired by the French writers Victor Hugo, Voltaire, and Gustave Flaubert, I've decided to start my blog!"* - not really, but I admit it would *look cooler*. This will just be the place to share my personal projects, ideas, and experiences.
+It's 2021 and I'm currently living in France. *"Inspired by the French writers Victor Hugo, Voltaire, and Gustave Flaubert, I've decided to start my blog!"* - not really, but I admit it would *look cooler*. This will be the place to share my personal projects, ideas, and experiences.
 
 Before starting any project, such as this blog, it is important to define what you want to achieve, your goals. Even if you have an idea in your mind, things will become clearer and more transparent if you **write them down**. For example, I find it particularly useful to draw some sketches before implementing a complex algorithm.
 
