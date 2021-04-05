@@ -24,7 +24,7 @@ As a side note, Víctor (from [Evolutio](https://evolutio.pt/)) and I developed 
 
 ## Design & Structure
 
-The design & structure of this page are made simple on purpose. Since I am not a designer, I needed some inspiration and for that, I've got some ideas from other blogs: [Tom MacWright](https://macwright.com/), [Andrew Healey](https://healeycodes.com/) and [Tyler Kimothy](https://tyler.kim/).
+The design & structure of this page are made simple on purpose. Since I am not a designer, I needed some inspiration and for that, I've got some ideas from other blogs: [Tom MacWright](https://macwright.com/), [Andrew Healey](https://healeycodes.com/), [Tyler Kimothy](https://tyler.kim/) and [Bartosz Ciechanowski](https://ciechanow.ski/).
 
 ## Privacy
 
