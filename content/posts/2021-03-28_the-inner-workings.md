@@ -8,6 +8,8 @@ If creating your personal page has been on your mind for a while, I hope this bl
 
 As I've [previously mentioned](/posts/hello-world/), it is important to define some guidelines of what we want to achieve (even if later on we need to change them). As such, this webpage is intended to be lightweight and fast. Therefore, I will try to just include the necessary resources. Though, I will not follow this religiously like some people that won't even include images (see the [motherf*ckingwebsite](http://motherfuckingwebsite.com/)).
 
+Moreover, I wanted to be able to fully control the website and not host it in a service like Medium. Nevertheless, it is still supposed to "just work" so that I can focus on the content and not on running the website.
+
 Since the main focus is to share some textual information with you, the website is structured in a way that makes it easy to read. First, the text is centered in the middle of the screen. Secondly, the line length follows [studies on the optimal line length](https://www.humanfactors.com/newsletters/optimal_line_length.asp), meaning they are not too long nor too short.
 
 <!-- ## Domain
@@ -17,6 +19,8 @@ The domain name [mmagalha.es](https://mmagalha.es) might have you wondering if I
 My initial idea was to grab the [magalha.es](https://magalha.es) domain, but it was already owned by my *"distant Brazilian cousin"* with the same last name as me. Unfortunately, he was not interested in selling it. -->
 
 ## Site Generator
+
+In order to write blog posts such as this one, I wanted to avoid messing with HTML when possible, so I write everything in Markdown (with the execption of the interactive parts). However, since browsers don't work with Markdown, we need to generate the HTML pages from those files - and that's exactly what a static site generator does!
 
 There are several [static site generators](https://jamstack.org/generators/) available. The two main criteria I used to choose between them were (1) it had to be popular and well established, measured by GitHub stars, and (2) it could not be JavaScript-based (it should just be on the web!). After checking that it provided all the desired functionalities, [Hugo](https://gohugo.io/) ended up being the chosen one. Another viable alternative would be [Jekyll](https://jekyllrb.com/).
 
