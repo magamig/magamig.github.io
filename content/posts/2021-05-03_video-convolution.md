@@ -221,4 +221,7 @@ Then, we just need to make this computation for each frame from the video feed -
     padding: 5px 15px;    
     text-align: center;
 }
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
 </style>
