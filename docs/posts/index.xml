@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Miguel Magalhães</title>
-    <link>/posts/</link>
+    <link>https://magamig.github.io/posts/</link>
     <description>Recent content in Posts on Miguel Magalhães</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 03 May 2021 21:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://magamig.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>Real-Time Video Convolution using WebGL</title>
-      <link>/posts/real-time-video-convolution-using-webgl/</link>
+      <link>https://magamig.github.io/posts/real-time-video-convolution-using-webgl/</link>
       <pubDate>Mon, 03 May 2021 21:00:00 +0100</pubDate>
       
-      <guid>/posts/real-time-video-convolution-using-webgl/</guid>
+      <guid>https://magamig.github.io/posts/real-time-video-convolution-using-webgl/</guid>
       <description>In image processing, a kernel (convolution matrix, or mask) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.
 This technique is also used in the field of deep learning with convolutional neural networks (CNNs). In this context, we try to learn the weights for each element of the matrix in order to improve the score of our model.</description>
     </item>
@@ -26,10 +26,10 @@ This technique is also used in the field of deep learning with convolutional neu
     
     <item>
       <title>The Inner Workings</title>
-      <link>/posts/the-inner-workings/</link>
+      <link>https://magamig.github.io/posts/the-inner-workings/</link>
       <pubDate>Sun, 28 Mar 2021 21:00:00 +0100</pubDate>
       
-      <guid>/posts/the-inner-workings/</guid>
+      <guid>https://magamig.github.io/posts/the-inner-workings/</guid>
       <description>If creating your personal page has been on your mind for a while, I hope this blog post inspires you to go through with it. This is not intended to be a manual, but an overview of my own process.
 As I&amp;rsquo;ve previously mentioned, it is important to define some guidelines of what we want to achieve (even if later on we need to change them). As such, this webpage is intended to be lightweight and fast.</description>
     </item>
@@ -38,10 +38,10 @@ As I&amp;rsquo;ve previously mentioned, it is important to define some guideline
     
     <item>
       <title>Hello, World!</title>
-      <link>/posts/hello-world/</link>
+      <link>https://magamig.github.io/posts/hello-world/</link>
       <pubDate>Mon, 01 Mar 2021 21:00:00 +0100</pubDate>
       
-      <guid>/posts/hello-world/</guid>
+      <guid>https://magamig.github.io/posts/hello-world/</guid>
       <description>Let&amp;rsquo;s start with the computer programming cliché phrase:
 &amp;gt; Hello, World
 It&amp;rsquo;s 2021 and I&amp;rsquo;m currently living in France as a grad student in a computer science program. &amp;ldquo;Inspired by the French writers Victor Hugo, Voltaire, and Gustave Flaubert, I&amp;rsquo;ve decided to start my blog!&amp;quot; - not really, but I admit it would be cooler. This will be the place to share my personal projects, ideas, and experiences.

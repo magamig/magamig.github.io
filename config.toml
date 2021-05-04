@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://magamig.github.io/"
 title = "Miguel Magalhães"
 theme = "etch"
 languageCode = "en-US"

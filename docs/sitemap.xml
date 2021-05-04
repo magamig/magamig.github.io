@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://magamig.github.io/</loc>
     <lastmod>2021-05-03T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://magamig.github.io/posts/</loc>
     <lastmod>2021-05-03T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>/posts/real-time-video-convolution-using-webgl/</loc>
+    <loc>https://magamig.github.io/posts/real-time-video-convolution-using-webgl/</loc>
     <lastmod>2021-05-03T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>/posts/the-inner-workings/</loc>
+    <loc>https://magamig.github.io/posts/the-inner-workings/</loc>
     <lastmod>2021-03-28T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>/posts/hello-world/</loc>
+    <loc>https://magamig.github.io/posts/hello-world/</loc>
     <lastmod>2021-03-01T21:00:00+01:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://magamig.github.io/about/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://magamig.github.io/categories/</loc>
   </url><url>
-    <loc>/places/</loc>
+    <loc>https://magamig.github.io/places/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://magamig.github.io/tags/</loc>
   </url>
 </urlset>
