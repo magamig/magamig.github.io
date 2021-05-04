@@ -335,3 +335,9 @@ footer#footer {
 hr {
     margin: 2em 0;
 }
+
+img[src$='#center'] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -6,9 +6,21 @@
     <description>Recent content in Posts on Miguel Magalhães</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 28 Mar 2021 21:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 03 May 2021 21:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Real-Time Video Convolution using WebGL</title>
+      <link>/posts/real-time-video-convolution-using-webgl/</link>
+      <pubDate>Mon, 03 May 2021 21:00:00 +0100</pubDate>
+      
+      <guid>/posts/real-time-video-convolution-using-webgl/</guid>
+      <description>In image processing, a kernel (convolution matrix, or mask) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.
+This technique is also used in the field of deep learning with convolutional neural networks (CNNs). In this context, we try to learn the weights for each element of the matrix in order to improve the score of our model.</description>
+    </item>
     
     
     
