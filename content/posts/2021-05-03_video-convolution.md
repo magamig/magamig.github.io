@@ -51,7 +51,7 @@ Then, we just need to make this computation for each frame from the video feed -
 ## Visualization
 <br/>
 
-<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" crossOrigin="anonymous" controls width=100% id="video" muted autoplay>
+<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" crossOrigin="anonymous" controls width=100% id="video" muted autoplay>
 	Your browser does not support the video tag.
 </video><br/>
 <canvas id="canvas" width="500" height="300"></canvas><br/>
