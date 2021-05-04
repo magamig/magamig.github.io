@@ -99,7 +99,6 @@ Then, we just need to make this computation for each frame from the video feed -
             value = value.map(e => "<td>" + e + "</td>");
             value = chunk(value,3);
             value = value.map(e => "<tr>" + e.join("") + "</tr>").join("");
-            console.log(value);
             kernelviz.innerHTML = value;
         }
     });

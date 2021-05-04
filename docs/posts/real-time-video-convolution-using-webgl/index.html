@@ -119,7 +119,6 @@ void main(){
             value = value.map(e => "<td>" + e + "</td>");
             value = chunk(value,3);
             value = value.map(e => "<tr>" + e.join("") + "</tr>").join("");
-            console.log(value);
             kernelviz.innerHTML = value;
         }
     });
