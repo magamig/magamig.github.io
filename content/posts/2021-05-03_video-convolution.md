@@ -26,7 +26,7 @@ In WebGL, we require two different [shaders](https://en.wikipedia.org/wiki/Shade
 But for more material on this topic, visit "[WebGL Fundamentals](https://observablehq.com/@bumbeishvili/webgl-fundamentals)" by Davit Bumbeishvili. Since we want to compute the pixels new color, we need to implement our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
 
 <pre id="fragment_shader">
-precision mediump float;s
+precision mediump float;
 uniform sampler2D image;
 uniform vec2 resolution;
 uniform mat3 kernel;
@@ -51,7 +51,7 @@ Then, we just need to make this computation for each frame from the video feed -
 ## Visualization
 <br/>
 
-<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" crossOrigin="anonymous" controls width=100% id="video" muted autoplay>
+<video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" crossOrigin="anonymous" controls width=100% id="video" muted autoplay>
 	Your browser does not support the video tag.
 </video><br/>
 <canvas id="canvas" width="500" height="300"></canvas><br/>
