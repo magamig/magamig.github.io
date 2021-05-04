@@ -23,10 +23,10 @@ In WebGL, we require two different [shaders](https://en.wikipedia.org/wiki/Shade
 - **Vertex**, responsible for the positions
 - **Fragment**, responsible for the colors
 
-But for more material on this topic, visit "[WebGL Fundamentals](https://observablehq.com/@bumbeishvili/webgl-fundamentals)" by Davit Bumbeishvili. Since we want to compute the pixels new color, we need to write our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
+But for more material on this topic, visit "[WebGL Fundamentals](https://observablehq.com/@bumbeishvili/webgl-fundamentals)" by Davit Bumbeishvili. Since we want to compute the pixels new color, we need to implement our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
 
 <pre id="fragment_shader">
-precision mediump float;
+precision mediump float;s
 uniform sampler2D image;
 uniform vec2 resolution;
 uniform mat3 kernel;
