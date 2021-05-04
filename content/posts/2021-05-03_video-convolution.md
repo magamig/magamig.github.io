@@ -46,7 +46,7 @@ void main(){
 }
 </pre>
 
-Afterwards, we just need to make this computation for each frame from the video feed - and there you have it: **a real-time convolution over a video using WebGL**.
+Then, we just need to make this computation for each frame from the video feed - and there you have it: **a real-time convolution over a video using WebGL**.
 
 ## Visualization
 <br/>
