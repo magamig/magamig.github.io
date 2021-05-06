@@ -4,7 +4,7 @@ date: 2021-05-03T21:00:00+01:00
 location: "France"
 ---
 
-In image processing, a **kernel** (convolution matrix, or mask) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.
+In image processing, a **kernel** (convolution matrix) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.
 
 This technique is also used in the field of deep learning with **convolutional neural networks (CNNs)**. In this context, we try to learn the weights for each element of the matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.
 
@@ -12,18 +12,22 @@ A convolution can be defined by the following formula:
 
 $$ g(x, y)=\omega * f(x, y)=\sum_{d x=-a}^{a} \sum_{d y=-b}^{b} \omega(d x, d y) f(x+d x, y+d y) $$
 
-where $g(x,y)$ is the output filtered image, $f(x, y)$ is the input image and $\omega$ is the kernel. This is pictured in the following animation:
+where $g(x,y)$ is the output filtered image, $f(x, y)$ is the input image and $\omega$ is the kernel. This is pictured in the following animation: [^1]
+
+[^1]: Michael Plotke. [2D Convolution Animation](2D_Convolution_Animation). Wikimedia Commons.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif#center)
 
-For something more interactive, I highly recommend you to visit "[Image Kernels](https://setosa.io/ev/image-kernels/)" by Victor Powell. There are several examples that already display this, so I'm bringing a different aprroach where we **apply the kernels in real-time to a video feed using WebGL**.
+For something more interactive, I highly recommend you to visit "[Image Kernels](https://setosa.io/ev/image-kernels/)" by Victor Powell. There are several examples that already display the process of performing convolutions, so I'm bringing a different aproach where we **apply the kernels in real-time to a video feed using WebGL**.
 
-In WebGL, we require two different [shaders](https://en.wikipedia.org/wiki/Shader): 
+---
 
-- **Vertex**, responsible for the positions
-- **Fragment**, responsible for the colors
+In this approach we will be using WebGL - a rasterization engine that draws points, lines, and triangles based on code we supply. To compute what an image will look like and where it is placed, we need to write a program formed by two different functions. These functions are called [shaders](https://en.wikipedia.org/wiki/Shader): 
 
-But for more material on this topic, visit "[WebGL Fundamentals](https://observablehq.com/@bumbeishvili/webgl-fundamentals)" by Davit Bumbeishvili. Since we want to compute the pixels new color, we need to implement our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
+- **Vertex Shader**, responsible for the positions
+- **Fragment Shader**, responsible for the colors
+
+But for more material on this topic, visit the website "[WebGL2 Fundamentals](https://webgl2fundamentals.org/)". Since we want to compute the pixel's new color, we need to implement our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
 
 <pre id="fragment_shader">
 precision mediump float;
@@ -46,7 +50,7 @@ void main(){
 }
 </pre>
 
-Then, we just need to make this computation for each frame from the video feed - and there you have it: **a real-time convolution over a video using WebGL**.
+Then, we just need to perform this computation for each frame from the video feed - and there you have it: **a real-time convolution over a video using WebGL**.
 
 ## Visualization
 <br/>
