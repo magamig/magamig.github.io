@@ -40,20 +40,24 @@
     <header id="post-header">
         <h1>Real-Time Video Convolution using WebGL</h1><time>
                 May 3, 2021
-                · France</time></header><p>In image processing, a <strong>kernel</strong> (convolution matrix) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.</p>
-<p>This technique is also used in the field of deep learning with <strong>convolutional neural networks (CNNs)</strong>. In this context, we try to learn the weights for each element of the matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.</p>
-<p>A convolution can be defined by the following formula:</p>
+                · France</time></header><p>A <strong>convolution</strong> is a mathematical operation that is done by multiplying a pixel’s and its neighboring pixels
+color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is named <strong>kernel</strong> or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more (defined throught a kernel).</p>
+<p>The aforementioned technique is also used in the field of deep learning with <strong>convolutional neural networks (CNNs)</strong>. In this context, we try to learn the weights for each element of the convolution matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.</p>
+<p>A convolution can be defined by the following formula: <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>$$ g(x, y)=\omega * f(x, y)=\sum_{d x=-a}^{a} \sum_{d y=-b}^{b} \omega(d x, d y) f(x+d x, y+d y) $$</p>
-<p>where $g(x,y)$ is the output filtered image, $f(x, y)$ is the input image and $\omega$ is the kernel. This is pictured in the following animation: <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif#center" alt=""></p>
-<p>For something more interactive, I highly recommend you to visit &ldquo;<a href="https://setosa.io/ev/image-kernels/" target="_blank">Image Kernels</a>&rdquo; by Victor Powell. There are several examples that already display the process of performing convolutions, so I&rsquo;m bringing a different aproach where we <strong>apply the kernels in real-time to a video feed using WebGL</strong>.</p>
+<p>where $g(x,y)$ is the output filtered image, $f(x, y)$ is the input image and $\omega$ is the kernel. This is pictured in the following animation: <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<video autoplay loop muted playsinline class="center">
+    <source src="/video/2d_convolution_animation.mp4" type="video/mp4">
+    Your browser doesn't support this embedded video.
+</video>
+<p>For something more interactive, I highly recommend you to visit &ldquo;<a href="https://setosa.io/ev/image-kernels/" target="_blank">Image Kernels</a>&rdquo; by Victor Powell. There are several examples that already display the process of performing convolutions, so I&rsquo;m bringing a different approach where we <strong>apply the kernels in real-time to a video feed using WebGL</strong>.</p>
 <hr>
 <p>In this approach we will be using WebGL - a rasterization engine that draws points, lines, and triangles based on code we supply. To compute what an image will look like and where it is placed, we need to write a program formed by two different functions. These functions are called <a href="https://en.wikipedia.org/wiki/Shader" target="_blank">shaders</a>:</p>
 <ul>
 <li><strong>Vertex Shader</strong>, responsible for the positions</li>
 <li><strong>Fragment Shader</strong>, responsible for the colors</li>
 </ul>
-<p>But for more material on this topic, visit the website &ldquo;<a href="https://webgl2fundamentals.org/" target="_blank">WebGL2 Fundamentals</a>&rdquo;. Since we want to compute the pixel&rsquo;s new color, we need to implement our logic within the fragment shader. Therefore, all that we do is <em>&ldquo;translate&rdquo;</em> the previous math formula into code as such:</p>
+<p>But for more material on this topic, visit &ldquo;<a href="https://webgl2fundamentals.org/" target="_blank">WebGL2 Fundamentals</a>&rdquo;. Since we want to compute the pixel&rsquo;s new color, we need to implement our logic within the fragment shader. Therefore, all that we do is <em>&ldquo;translate&rdquo;</em> the previous math formula into code as such:</p>
 <pre id="fragment_shader">
 precision mediump float;
 uniform sampler2D image;
@@ -74,9 +78,9 @@ void main(){
     gl_FragColor[3] = 1.0; //alpha correction
 }
 </pre>
-<p>Then, we just need to perform this computation for each frame from the video feed - and there you have it: <strong>a real-time convolution over a video using WebGL</strong>.</p>
+<p>In this example, we have the particularity of the <code>vec2 uv</code> variable which represents the current pixel cooordinates, and the <code>vec2 cellSize</code> which is the size of each pixel both horizontally and vertically.</p>
+<p>Afterwards, we just need to perform this computation for each frame from the video feed - and there you have it: <strong>a real-time convolution over a video using WebGL</strong>. For more details on how this is working under the hood, you can check the page source code.</p>
 <h2 id="visualization">Visualization</h2>
-<br/>
 <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" crossOrigin="anonymous" controls width=100% id="video" muted autoplay>
 	Your browser does not support the video tag.
 </video><br/>
@@ -252,7 +256,10 @@ video::-webkit-media-controls-fullscreen-button {
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Michael Plotke. <a href="2D_Convolution_Animation">2D Convolution Animation</a>. Wikimedia Commons.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Song Ho Ahn (안성호). <a href="http://www.songho.ca/dsp/convolution/convolution.html#convolution_2d" target="_blank">Convolution</a>. Digital Signal Processing.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Michael Plotke. <a href="https://commons.wikimedia.org/wiki/File:2D_Convolution_Animation.gif" target="_blank">2D Convolution Animation</a>. Wikimedia Commons.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

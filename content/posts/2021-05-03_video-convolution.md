@@ -4,30 +4,36 @@ date: 2021-05-03T21:00:00+01:00
 location: "France"
 ---
 
-In image processing, a **kernel** (convolution matrix) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.
+A **convolution** is a mathematical operation that is done by multiplying a pixel’s and its neighboring pixels
+color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is named **kernel** or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more (defined throught a kernel).
 
-This technique is also used in the field of deep learning with **convolutional neural networks (CNNs)**. In this context, we try to learn the weights for each element of the matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.
+The aforementioned technique is also used in the field of deep learning with **convolutional neural networks (CNNs)**. In this context, we try to learn the weights for each element of the convolution matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.
 
-A convolution can be defined by the following formula:
+A convolution can be defined by the following formula: [^2]
+
+[^2]: Song Ho Ahn (안성호). [Convolution](http://www.songho.ca/dsp/convolution/convolution.html#convolution_2d). Digital Signal Processing.
 
 $$ g(x, y)=\omega * f(x, y)=\sum_{d x=-a}^{a} \sum_{d y=-b}^{b} \omega(d x, d y) f(x+d x, y+d y) $$
 
 where $g(x,y)$ is the output filtered image, $f(x, y)$ is the input image and $\omega$ is the kernel. This is pictured in the following animation: [^1]
 
-[^1]: Michael Plotke. [2D Convolution Animation](2D_Convolution_Animation). Wikimedia Commons.
+[^1]: Michael Plotke. [2D Convolution Animation](https://commons.wikimedia.org/wiki/File:2D_Convolution_Animation.gif). Wikimedia Commons.
 
-![](https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif#center)
+<video autoplay loop muted playsinline class="center">
+    <source src="/video/2d_convolution_animation.mp4" type="video/mp4">
+    Your browser doesn't support this embedded video.
+</video>
 
-For something more interactive, I highly recommend you to visit "[Image Kernels](https://setosa.io/ev/image-kernels/)" by Victor Powell. There are several examples that already display the process of performing convolutions, so I'm bringing a different aproach where we **apply the kernels in real-time to a video feed using WebGL**.
+For something more interactive, I highly recommend you to visit "[Image Kernels](https://setosa.io/ev/image-kernels/)" by Victor Powell. There are several examples that already display the process of performing convolutions, so I'm bringing a different approach where we **apply the kernels in real-time to a video feed using WebGL**.
 
 ---
 
-In this approach we will be using WebGL - a rasterization engine that draws points, lines, and triangles based on code we supply. To compute what an image will look like and where it is placed, we need to write a program formed by two different functions. These functions are called [shaders](https://en.wikipedia.org/wiki/Shader): 
+In this approach we will be using WebGL - a rasterization engine that draws points, lines, and triangles based on code we supply. To compute what an image will look like and where it is placed, we need to write a program formed by two different functions. These functions are called [shaders](https://en.wikipedia.org/wiki/Shader):
 
 - **Vertex Shader**, responsible for the positions
 - **Fragment Shader**, responsible for the colors
 
-But for more material on this topic, visit the website "[WebGL2 Fundamentals](https://webgl2fundamentals.org/)". Since we want to compute the pixel's new color, we need to implement our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
+But for more material on this topic, visit "[WebGL2 Fundamentals](https://webgl2fundamentals.org/)". Since we want to compute the pixel's new color, we need to implement our logic within the fragment shader. Therefore, all that we do is *"translate"* the previous math formula into code as such:
 
 <pre id="fragment_shader">
 precision mediump float;
@@ -50,10 +56,11 @@ void main(){
 }
 </pre>
 
-Then, we just need to perform this computation for each frame from the video feed - and there you have it: **a real-time convolution over a video using WebGL**.
+In this example, we have the particularity of the `vec2 uv` variable which represents the current pixel cooordinates, and the `vec2 cellSize` which is the size of each pixel both horizontally and vertically.  
+
+Afterwards, we just need to perform this computation for each frame from the video feed - and there you have it: **a real-time convolution over a video using WebGL**. For more details on how this is working under the hood, you can check the page source code.
 
 ## Visualization
-<br/>
 
 <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" crossOrigin="anonymous" controls width=100% id="video" muted autoplay>
 	Your browser does not support the video tag.

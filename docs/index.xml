@@ -6,9 +6,21 @@
     <description>Recent content on Miguel Magalhães</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 03 May 2021 21:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 10 May 2021 21:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://magamig.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Talking @ The Real Python Podcast</title>
+      <link>https://magamig.github.io/posts/talking-the-real-python-podcast/</link>
+      <pubDate>Mon, 10 May 2021 21:00:00 +0100</pubDate>
+      
+      <guid>https://magamig.github.io/posts/talking-the-real-python-podcast/</guid>
+      <description>This week, I was a guest at the The Real Python Podcast - a weekly Python podcast hosted by Christopher Bailey. It includes interviews, coding tips, and conversation with guests from the Python community.
+As co-organizers of DjangoCon Europe 2021, David and I talked a bit about the conference: how the organization of the virtual event has been, some of the difficulties in the process (it was supposed to be a physical conference at Porto), and what makes it different and exciting!</description>
+    </item>
     
     
     
@@ -18,8 +30,7 @@
       <pubDate>Mon, 03 May 2021 21:00:00 +0100</pubDate>
       
       <guid>https://magamig.github.io/posts/real-time-video-convolution-using-webgl/</guid>
-      <description>In image processing, a kernel (convolution matrix) is a small matrix used to apply effects to an image, such as blurring, sharpening or outlining. These effects are accomplished by performing a convolution between a kernel and an image.
-This technique is also used in the field of deep learning with convolutional neural networks (CNNs). In this context, we try to learn the weights for each element of the matrix in order to improve the score of our model.</description>
+      <description>A convolution is a mathematical operation that is done by multiplying a pixel’s and its neighboring pixels color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is named kernel or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more (defined throught a kernel).</description>
     </item>
     
     
