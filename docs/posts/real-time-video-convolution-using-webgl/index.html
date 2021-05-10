@@ -41,7 +41,7 @@
         <h1>Real-Time Video Convolution using WebGL</h1><time>
                 May 3, 2021
                 · France</time></header><p>A <strong>convolution</strong> is a mathematical operation that is done by multiplying a pixel’s and its neighboring pixels
-color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is named <strong>kernel</strong> or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more (defined throught a kernel).</p>
+color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is called <strong>kernel</strong> or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more; where each effect uses a distinct kernel.</p>
 <p>The aforementioned technique is also used in the field of deep learning with <strong>convolutional neural networks (CNNs)</strong>. In this context, we try to learn the weights for each element of the convolution matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.</p>
 <p>A convolution can be defined by the following formula: <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>$$ g(x, y)=\omega * f(x, y)=\sum_{d x=-a}^{a} \sum_{d y=-b}^{b} \omega(d x, d y) f(x+d x, y+d y) $$</p>

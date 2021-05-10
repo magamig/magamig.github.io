@@ -5,7 +5,7 @@ location: "France"
 ---
 
 A **convolution** is a mathematical operation that is done by multiplying a pixel’s and its neighboring pixels
-color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is named **kernel** or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more (defined throught a kernel).
+color value by a weighted matrix, and then adding those values together (for all the pixels of an image). The small matrix that defines the weights of the multiplication is called **kernel** or convolution matrix. This is used to apply effects to an image such as blurring, sharpening, outlining, and more; where each effect uses a distinct kernel.
 
 The aforementioned technique is also used in the field of deep learning with **convolutional neural networks (CNNs)**. In this context, we try to learn the weights for each element of the convolution matrix in order to improve the score of our model. However, this post is more focused on just understanding how convolutions work.
 
