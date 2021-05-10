@@ -65,6 +65,20 @@ header#banner nav ul li a {
     margin-left: auto;
 }
 
+@media (max-width: 767.99px) {
+    body {
+        padding: 3em;
+    }
+    .container {
+        display: block;
+    }
+    header#banner {
+        width: 100%;
+        padding-bottom: 3em;
+        margin-bottom: 3em;
+        border-bottom: 1px solid #313a3d;
+    }
+}
 @media (max-width: 576px) {
     body {
         padding: 2em;
@@ -80,20 +94,6 @@ header#banner nav ul li a {
     time:before {
         content: "\a";
         white-space: pre;
-    }
-}
-@media (max-width: 767.99px) {
-    body {
-        padding: 3em;
-    }
-    .container {
-        display: block;
-    }
-    header#banner {
-        width: 100%;
-        padding-bottom: 3em;
-        margin-bottom: 3em;
-        border-bottom: 1px solid #313a3d;
     }
 }
 @media (min-width: 992px) {
