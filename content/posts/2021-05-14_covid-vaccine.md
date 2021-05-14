@@ -26,7 +26,6 @@ When selecting the type of vaccine, I noticed it would send a `GET` request to t
 Within a couple of minutes, I had a fully working **`Python` script** that asked the server every 10 seconds when was the next slot available, until it found a vacancy. Afterwards, it would open the booking website, where I would manually fill out the form. I left it running shy of 2 hours, until **I successfully got my apointment for today!** In the end, my friends also managed to get a vaccine, albeit with a bit more effort.
 
 <pre>
-import sys
 import time
 import webbrowser
 import requests
