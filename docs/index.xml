@@ -6,9 +6,22 @@
     <description>Recent content on Miguel Magalhães</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 10 May 2021 21:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 14 May 2021 15:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://magamig.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Scraping for a COVID-19 Vaccine</title>
+      <link>https://magamig.github.io/posts/scraping-for-a-covid-19-vaccine/</link>
+      <pubDate>Fri, 14 May 2021 15:00:00 +0100</pubDate>
+      
+      <guid>https://magamig.github.io/posts/scraping-for-a-covid-19-vaccine/</guid>
+      <description>ℹ️ COVID-19 vaccine Learn more from the World Health Organization.
+ Earlier today, I went to get my first COVID-19 vaccine dose. Although accross the pond it might seem normal for a young person to be getting the vaccine, it&amp;rsquo;s still considered early for continental Europe, in particular France. So how did I get mine?
+Firstly, I&amp;rsquo;d like to make it clear that I did not cut in line! The elderly population, health care and other essential workers, or those clinically vulnurable are already vaccinated by now (or have access to a priority queue).</description>
+    </item>
     
     
     
