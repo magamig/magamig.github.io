@@ -30,15 +30,15 @@ import sys
 import time
 import webbrowser
 import requests
-import datetime
+from datetime import datetime
 
 found = False
 while not found:
-    today = datetime.datetime.today()
+    today = datetime.today()
     try:
         r = requests.get(url = API_URL)
         data = r.json()
-        next_slot = datetime.datetime.strptime(data['next_slot'], '%Y-%m-%d')
+        next_slot = datetime.strptime(data['next_slot'], '%Y-%m-%d')
         print(f'Next slot: {next_slot}')
         if((next_slot - today).days < 1):
             webbrowser.open(URL)
