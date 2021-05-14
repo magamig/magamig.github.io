@@ -368,3 +368,10 @@ img[src$='#center'] {
 .w-100 {
     width: 100%;
 }
+
+.info {
+    background: #fff3cd;
+    margin: 1em 0;
+    border: 1px solid #ffc107;
+    padding: 0em 1em;
+}
