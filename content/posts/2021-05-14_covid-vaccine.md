@@ -13,7 +13,7 @@ Learn more from the [World Health Organization](https://www.who.int/emergencies/
 
 Earlier today, I went to get my first COVID-19 vaccine dose. Although accross the pond it might seem normal for a young person to be getting the vaccine, it's still considered early for continental Europe, in particular France. So how did I get mine?
 
-Firstly, I'd like to make it clear that I did not cut in line! The elderly population, health care and other essential workers, or those clinically vulnurable are already vaccinated by now (or have access to a priority queue). Currently, the French goverment is vaccinating by phases using the age as the only criteria, but sometimes people change or cancel their appointments. When these gaps are not filled by the eve of the appointment **and** the vaccine is temperature sensitive, these slots are up for grabs for the non-priority population. The reasoning behind this is that it is better to have someone non-prioritary taking the vaccine, than letting it go to waste. Which is true for the Pfizer-BioNTech and Moderna vaccines. [^1]
+Firstly, I'd like to make it clear that I did not cut in line! The elderly population, health care and other essential workers, or those clinically vulnurable are already vaccinated by now (or have access to a priority queue). Currently, the French goverment is vaccinating by phases using the age as the only criteria, but sometimes people change or cancel their appointments. When these gaps are not filled by the eve of the appointment **and** the vaccine is temperature sensitive, these slots are up for grabs for the non-priority population. The reasoning behind this is that it is better to have someone non-prioritary taking the vaccine, than letting it go to waste (which is true for the Pfizer-BioNTech and Moderna vaccines). [^1]
 
 [^1]: Crommelin, D. J., Anchordoquy, T. J., Volkin, D. B., Jiskoot, W., & Mastrobattista, E. (2021). Addressing the cold reality of mRNA vaccine stability. Journal of Pharmaceutical Sciences, 110(3), 997-1001.
 
@@ -23,7 +23,7 @@ When selecting the type of vaccine, I noticed it would send a `GET` request to t
 
 ![](/image/schedule_vaccine_covid.png)
 
-Within a couple of minutes, I had a fully working **`Python` script that** asked the server every 10 seconds when was the next slot available, until it found a vacancy. Afterwards, it would open the booking website, where I would manually fill out the form. I left it running shy of 2 hours, until **I successfully got my apointment for today!** 
+Within a couple of minutes, I had a fully working **`Python` script** that asked the server every 10 seconds when was the next slot available, until it found a vacancy. Afterwards, it would open the booking website, where I would manually fill out the form. I left it running shy of 2 hours, until **I successfully got my apointment for today!** 
 
 <pre>
 import sys
