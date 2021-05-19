@@ -49,7 +49,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
         e.onmouseover = () => mouseOver({target: "path#" + e.id});
         e.onmouseleave = () => mouseLeave()
     });
-    d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+    d3.json("/other/world.geojson")
         .then((values) => {
             svg.selectAll("path")
                 .data(values.features)
