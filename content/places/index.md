@@ -24,15 +24,15 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
             .attr("viewBox", "0 0 " + w + " " + h)
             .classed("svg-content", true);
     let mouseOver = function(d) {
-        console.log(d)
         d3.selectAll("path")
             .transition()
-            .duration(200)
-            .style("opacity", .5)
-            .style("stroke", "transparent");
+            .duration(100)
+            .style("opacity", .8)
+            .style("stroke", "#999");
         d3.select(d.target)
+            .raise()
             .transition()
-            .duration(200)
+            .duration(100)
             .style("opacity", 1)
             .style("stroke", "black");
         selectedLabel.innerHTML = ("> " + d.target.__data__.properties.name) ?? "";
@@ -40,9 +40,9 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
     let mouseLeave = function() {
         d3.selectAll("path")
             .transition()
-            .duration(200)
+            .duration(100)
             .style("opacity", .8)
-            .style("stroke", "transparent");
+            .style("stroke", "#999");
         selectedLabel.innerHTML = "&nbsp;";
     };
     [...document.getElementsByClassName('interactive')].forEach((e) => {
@@ -55,7 +55,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .data(values.features)
                 .enter()
                 .append("path")
-                .style("stroke", "transparent")
+                .style("stroke", "#999")
                 .style("opacity", .8)
                 .on("mouseover", mouseOver )
                 .on("mouseleave", mouseLeave )
