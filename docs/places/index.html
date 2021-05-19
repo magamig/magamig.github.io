@@ -75,7 +75,7 @@
         d3.selectAll("path")
             .transition()
             .duration(200)
-            .style("opacity", 1)
+            .style("opacity", .8)
             .style("stroke", "transparent");
         selectedLabel.innerHTML = "&nbsp;";
     };
@@ -90,6 +90,7 @@
                 .enter()
                 .append("path")
                 .style("stroke", "transparent")
+                .style("opacity", .8)
                 .on("mouseover", mouseOver )
                 .on("mouseleave", mouseLeave )
                 .attr("d", path)
@@ -97,7 +98,7 @@
                 .attr("fill", (d) => 
                     visited.includes(d.id) 
                     ? '#03c8ff' 
-                    : '#999999'
+                    : '#aaaaaa'
                 );
         });
 </script>

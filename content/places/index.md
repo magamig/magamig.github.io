@@ -41,7 +41,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
         d3.selectAll("path")
             .transition()
             .duration(200)
-            .style("opacity", 1)
+            .style("opacity", .8)
             .style("stroke", "transparent");
         selectedLabel.innerHTML = "&nbsp;";
     };
@@ -56,6 +56,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .enter()
                 .append("path")
                 .style("stroke", "transparent")
+                .style("opacity", .8)
                 .on("mouseover", mouseOver )
                 .on("mouseleave", mouseLeave )
                 .attr("d", path)
@@ -63,7 +64,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .attr("fill", (d) => 
                     visited.includes(d.id) 
                     ? '#03c8ff' 
-                    : '#999999'
+                    : '#aaaaaa'
                 );
         });
 </script>
