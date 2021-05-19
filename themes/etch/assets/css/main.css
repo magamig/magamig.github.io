@@ -81,7 +81,7 @@ header#banner nav ul li a {
 }
 @media (max-width: 576px) {
     body {
-        padding: 2em;
+        padding: 1.5em 1em;
     }
     header#banner {
         width: 100%;
@@ -115,7 +115,7 @@ header#banner nav ul li a {
     }
 } */
 
-a {
+a, .interactive {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     transition: all .15s ease-in-out;
@@ -336,16 +336,27 @@ footer#footer {
 }
 
 #map {
-    width: 100vw;
-    height: 550px;
     position: absolute;
     left: 0;
-    margin-top: 3em;
-    background: rgba(128,128,128,0.1);
+    width: 100vw;
+    text-align: center;
 }
 
-#map a {
-    text-decoration: none !important;
+#map svg {
+    max-height: 80vh;
+    max-width: 100%;
+    width: 110vh
+}
+
+.interactive {
+    cursor: help; 
+    color: inherit;
+    text-decoration-color: #FA7D00;
+}
+
+.interactive:hover {
+    color: #FA7D00;
+    text-decoration-color: transparent;
 }
 
 hr {
