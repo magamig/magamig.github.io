@@ -23,10 +23,10 @@ math= "true"
     weight = 10
 
   [[menu.main]]
-    identifier = "places"
-    name = "Places"
-    title = "Places"
-    url = "/places/"
+    identifier = "map"
+    name = "Map"
+    title = "Map"
+    url = "/map/"
     weight = 12
   
   # [[menu.main]]

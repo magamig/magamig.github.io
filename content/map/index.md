@@ -1,5 +1,5 @@
 ---
-title: "Places"
+title: "Map"
 ---
 
 I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN" class="interactive">Hungary</span>, <span id="FIN" class="interactive">Finland</span>, and I'm currently based in <span id="FRA" class="interactive">France</span>. Below is the map with the countries I've visited.
