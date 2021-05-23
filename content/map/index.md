@@ -10,6 +10,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 <script>
+    const lived = ["PRT","HUN","FIN","FRA"];
     const visited = ["PRT","ESP","LUX","ITA","HUN","MKD","KOS","SVK","POL","BIH",
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
         "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST"];
@@ -62,9 +63,11 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .attr("d", path)
                 .attr("id", d => d.id)
                 .attr("fill", (d) => 
-                    visited.includes(d.id) 
-                    ? '#03c8ff' 
-                    : '#aaaaaa'
+                    lived.includes(d.id)
+                    ? '#fa7d00'
+                    : (visited.includes(d.id) 
+                        ? '#03c8ff' 
+                        : '#aaaaaa')
                 );
         });
 </script>
