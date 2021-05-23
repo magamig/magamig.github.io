@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 5em;
     line-height: 1.6;
-    border-top: 2px solid #1d1f21;
+    border-top: 5px solid #a40000;
 }
 
 header#banner {
@@ -128,13 +128,13 @@ main#content {
 }
 
 main#content a {
-    /* color: #007dfa; */
+    /* color: #a40000; */
     color: inherit;
-    text-decoration-color: #007dfa;
+    text-decoration-color: #a40000;
 }
 
 main#content a:hover {
-    color: #007dfa;
+    color: #a40000;
     text-decoration-color: transparent;
 }
 
@@ -340,6 +340,7 @@ footer#footer {
     left: 0;
     width: 100vw;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 #map svg {
@@ -351,11 +352,11 @@ footer#footer {
 .interactive {
     cursor: help; 
     color: inherit;
-    text-decoration-color: #FA7D00;
+    text-decoration-color: #00A4A4;
 }
 
 .interactive:hover {
-    color: #FA7D00;
+    color: #00A4A4;
     text-decoration-color: transparent;
 }
 

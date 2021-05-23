@@ -64,9 +64,9 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .attr("id", d => d.id)
                 .attr("fill", (d) => 
                     lived.includes(d.id)
-                    ? '#fa7d00'
+                    ? '#00a4a4'
                     : (visited.includes(d.id) 
-                        ? '#03c8ff' 
+                        ? '#a40000' 
                         : '#aaaaaa')
                 );
         });
