@@ -15,9 +15,9 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
         "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST"];
     const selectedLabel = document.getElementById("selectedLabel");
-    let w = 1000,
-        h = 620,
-        projection = d3.geoMercator().translate([w/2, h/2]).scale(150).center([0,45]);
+    let w = 900,
+        h = 500,
+        projection = d3.geoLarrivee().translate([w/2.15, h/2.7]).scale(156).center([0,45]);
         path = d3.geoPath().projection(projection),
         svg = d3.select("#map")
             .append("svg")
@@ -26,28 +26,22 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
             .classed("svg-content", true);
     let mouseOver = function(d) {
         d3.selectAll("path")
-            .transition()
-            .duration(100)
-            .style("opacity", .8)
-            .style("stroke", "#999");
+            .style("opacity", 1)
+            .style("stroke", "white");
         d3.select(d.target)
             .raise()
-            .transition()
-            .duration(100)
-            .style("opacity", 1)
+            .style("opacity", 0.3)
             .style("stroke", "black");
-        selectedLabel.innerHTML = ("> " + d.target.__data__.properties.name) ?? "";
+        selectedLabel.innerHTML = ("> " + (d.name ?? d.target.__data__.properties.name)) ?? "";
     };
     let mouseLeave = function() {
         d3.selectAll("path")
-            .transition()
-            .duration(100)
-            .style("opacity", .8)
-            .style("stroke", "#999");
+            .style("opacity", 1)
+            .style("stroke", "white");
         selectedLabel.innerHTML = "&nbsp;";
     };
     [...document.getElementsByClassName('interactive')].forEach((e) => {
-        e.onmouseover = () => mouseOver({target: "path#" + e.id});
+        e.onmouseover = () => mouseOver({target: "path#" + e.id, name: e.innerText});
         e.onmouseleave = () => mouseLeave()
     });
     d3.json("/other/world.geojson")
@@ -56,18 +50,16 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .data(values.features)
                 .enter()
                 .append("path")
-                .style("stroke", "#999")
-                .style("opacity", .8)
+                .style("stroke", "white")
+                .style("opacity", 1)
                 .on("mouseover", mouseOver )
                 .on("mouseleave", mouseLeave )
                 .attr("d", path)
                 .attr("id", d => d.id)
                 .attr("fill", (d) => 
-                    lived.includes(d.id)
-                    ? '#00a4a4'
-                    : (visited.includes(d.id) 
-                        ? '#a40000' 
-                        : '#aaaaaa')
+                    visited.includes(d.id) 
+                    ? '#a40000' 
+                    : '#aaaaaa'
                 );
         });
 </script>
