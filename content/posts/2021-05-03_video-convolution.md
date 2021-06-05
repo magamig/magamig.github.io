@@ -1,5 +1,5 @@
 ---
-title: "Real-Time Video Convolution using WebGL"
+title: "Real-Time Video Convolution Using WebGL"
 date: 2021-05-03T21:00:00+01:00
 location: "France"
 ---

@@ -2,8 +2,7 @@
 title: "About"
 ---
 
-<br/>
-<img src="/image/me.svg" style="max-width: 250px"/>
+![](/image/me.jpg)
 
 Currently studying [IMLEX Computational Imaging MSc](https://imlex.org/) at Université Jean Monnet in France. Using this blog to put things into writing. My topics of interest revolve around images and maps. 
 

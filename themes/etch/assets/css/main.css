@@ -319,13 +319,13 @@ main#content section.footnotes {
     font-size: 0.9em;
 }
 
-a.footnote-ref::before {
+/* a.footnote-ref::before {
     content: '[';
 }
 
 a.footnote-ref::after {
     content: ']';
-}
+} */
 
 footer#footer {
     font-size: 14px;
