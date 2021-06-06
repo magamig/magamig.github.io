@@ -10,14 +10,13 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 <script>
-    const lived = ["PRT","HUN","FIN","FRA"];
     const visited = ["PRT","ESP","LUX","ITA","HUN","MKD","KOS","SVK","POL","BIH",
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
         "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST"];
     const selectedLabel = document.getElementById("selectedLabel");
     let w = 900,
-        h = 500,
-        projection = d3.geoLarrivee().translate([w/2.15, h/2.7]).scale(156).center([0,45]);
+        h = 480,
+        projection = d3.geoLarrivee().translate([w/2.15, h/2.85]).scale(145).center([0,45]);
         path = d3.geoPath().projection(projection),
         svg = d3.select("#map")
             .append("svg")
@@ -59,7 +58,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
                 .attr("fill", (d) => 
                     visited.includes(d.id) 
                     ? '#a40000' 
-                    : '#aaaaaa'
+                    : '#cccccc'
                 );
         });
 </script>

@@ -2,8 +2,13 @@
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
-            {{ range .Site.Menus.main.ByWeight -}}
+            {{ $current := . }}
+            {{ range $idx, $val := .Site.Menus.main.ByWeight -}}
             <li>
+                {{ $active :=  eq $current.Section .Identifier }}
+                {{ $active = or $active  (eq $current.Title .Name) }}
+                {{ $active = or $active (and $current.IsHome (eq $idx 0) ) }}
+                {{ if $active }}»{{ end }}
                 {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
             </li>
             {{- end }}
