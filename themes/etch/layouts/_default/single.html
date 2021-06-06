@@ -1,17 +1,19 @@
 {{ define "main" }}
 <article>
-    <header id="post-header">
-        <h1>{{ .Title }}</h1>
-        {{- if isset .Params "date" -}}
-            <time>
-                {{ .Date.Format "January 2, 2006" }}
-                {{/*  {{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th{{ end }} {{ .Date.Format "January 2006" }}  */}}
-                {{- if isset .Params "location" -}}
-                    · {{ .Params.location }}
-                {{- end -}}
-            </time>
-        {{- end -}}
-    </header>
+    {{- if not (isset .Params "hidetitle") -}}
+        <header id="post-header">
+            <h1>{{ .Title }}</h1>
+            {{- if isset .Params "date" -}}
+                <time>
+                    {{ .Date.Format "January 2, 2006" }}
+                    {{/*  {{ .Date.Format "2" }}{{ if in (slice 1 21 31) .Date.Day}}st{{ else if in (slice 2 22) .Date.Day}}nd{{ else if in (slice 3 23) .Date.Day}}rd{{ else }}th{{ end }} {{ .Date.Format "January 2006" }}  */}}
+                    {{- if isset .Params "location" -}}
+                        · {{ .Params.location }}
+                    {{- end -}}
+                </time>
+            {{- end -}}
+        </header>
+    {{- end -}}
     {{- .Content -}}
 </article>
 {{ end }}
