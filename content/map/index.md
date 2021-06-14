@@ -12,7 +12,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
 <script>
     const visited = ["PRT","ESP","LUX","ITA","HUN","MKD","KOS","SVK","POL","BIH",
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
-        "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST"];
+        "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST","MCO"];
     const selectedLabel = document.getElementById("selectedLabel");
     let w = 900,
         h = 480,

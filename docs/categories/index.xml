@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Organizing a Conference With More Than 400 Attendees</title>
+      <link>https://magamig.github.io/posts/organizing-a-conference-with-more-than-400-attendees/</link>
+      <pubDate>Wed, 09 Jun 2021 15:00:00 +0100</pubDate>
+      
+      <guid>https://magamig.github.io/posts/organizing-a-conference-with-more-than-400-attendees/</guid>
+      <description>Last week, DjangoCon Europe 2021 took place completelly online from the 2nd to the 6th of June. The conference main focus is the web framework Django, it happens yearly in Europe, and it includes 5 days of talks, sprints, and tutorials. I was the lead co-organizer and it was completelly exhausting!
+Orginally, the conference was planned to take place phisically at the Super Bock Arena in Porto, Portugal; we had to shift to a different approach and make a virtual conference (yet again).</description>
+    </item>
+    
+    
+    
+    <item>
       <title>Scraping for a COVID-19 Vaccine</title>
       <link>https://magamig.github.io/posts/scraping-for-a-covid-19-vaccine/</link>
       <pubDate>Fri, 14 May 2021 15:00:00 +0100</pubDate>
