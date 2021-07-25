@@ -314,6 +314,11 @@ footer#footer {
     width: 130vh
 }
 
+#xsmap {
+    max-height: 100vh;
+    height: 400px;
+}
+
 .interactive {
     cursor: help; 
     color: inherit;
@@ -350,7 +355,7 @@ img[src$='#center'] {
     background: #fff3cd;
     margin: 1em 0;
     border: 1px solid #ffc107;
-    padding: 0em 1em;
+    padding: .5em 1em;
 }
 
 @media (max-width: 991px) {
