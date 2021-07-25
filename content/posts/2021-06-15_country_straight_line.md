@@ -13,7 +13,7 @@ location: "Monaco"
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js"></script>
 <!-- leaflet-measurecontrol -->
-<link rel="stylesheet" href="http://makinacorpus.github.io/Leaflet.MeasureControl/leaflet.measurecontrol.css">
+<link rel="stylesheet" href="https://makinacorpus.github.io/Leaflet.MeasureControl/leaflet.measurecontrol.css">
 <script src="https://cdn.jsdelivr.net/npm/leaflet.measurecontrol@1.1.0/leaflet.measurecontrol.min.js"></script>
 
 ![](/image/monaco.jpg)
@@ -62,7 +62,7 @@ geojson.addTo(map);
 map.fitBounds(geojson.getBounds());
 
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=c07befc9-a828-4993-9ede-3071b3008b8c', {
 	maxZoom: 20,
 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
