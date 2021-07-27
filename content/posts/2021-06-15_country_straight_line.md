@@ -18,7 +18,7 @@ location: "Monaco"
 
 ![](/image/monaco.jpg)
 
-Recently, I've crossed an entire country in a straight line. "Why?", you might ask... why not? Inspired by [Tom Davies](https://www.atlasobscura.com/articles/geowizard-davies-straight-line-mission-across) (aka [GeoWizard](https://www.youtube.com/channel/UCW5OrUZ4SeUYkUg1XqcjFYA)), I decided to go on this harmless adventure & challenge across... Monaco! Not as exciting as Tom's missions across Norway or Wales, but good enough as a .
+Recently, I've crossed an entire country in a straight line. "Why?", you might ask... why not? Inspired by [Tom Davies](https://www.atlasobscura.com/articles/geowizard-davies-straight-line-mission-across) (aka [GeoWizard](https://www.youtube.com/channel/UCW5OrUZ4SeUYkUg1XqcjFYA)), I decided to go on this harmless challenge across... Monaco! Not as exciting as Tom's missions across Norway or Wales, but good enough as an adventure.
 
 Before embarking on this trip, some planning had to be done. Since Monaco is a small country, we had to cross a small distance. Nevertheless, it's very mountainous and full of buildings everywhere, which makes the straigh line part of the challenge complex. The strategy used to approach this challenge was to go on Google Maps and drop two pins one for start and stop and moving them around until we converged to an adequate path. After having this pre-planned route it was time to draw the **actual line** (in green below) and then try to stick as closer as possible to it.
 
