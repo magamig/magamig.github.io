@@ -107,28 +107,28 @@
 <br/>
 </div>
 <script type="module">
-const map = L.map('xsmap').setView([51.505, -0.09], 13);
-map.addControl(new L.Control.Fullscreen());
-L.Control.measureControl().addTo(map);
+(async () => {
+	const map = L.map('xsmap').setView([51.505, -0.09], 13);
+	map.addControl(new L.Control.Fullscreen());
+	L.Control.measureControl().addTo(map);
 
-const response = await fetch("/other/monaco.geojson");
-const data = await response.json();
-const geojson = L.geoJson(data, {
-	style: feature => {
-		return feature.style;
-	}
-});
-geojson.addTo(map);
-map.fitBounds(geojson.getBounds());
+	const response = await fetch("/other/monaco.geojson");
+	const data = await response.json();
+	const geojson = L.geoJson(data, {
+		style: feature => {
+			return feature.style;
+		}
+	});
+	geojson.addTo(map);
+	map.fitBounds(geojson.getBounds());
 
-// L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=c07befc9-a828-4993-9ede-3071b3008b8c'
-// L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager_labels_under/{z}/{x}/{y}' + (L.Browser.retina ? '@2x.png' : '.png'), {
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 20,
-	//attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
+	// L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=c07befc9-a828-4993-9ede-3071b3008b8c'
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 20,
+		//attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+})();
 </script>
 </article>
 
