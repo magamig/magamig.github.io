@@ -358,6 +358,10 @@ img[src$='#center'] {
     padding: .5em 1em;
 }
 
+td {
+    padding-right: 1em;
+}
+
 @media (max-width: 991px) {
     body {
         padding: 2em;
