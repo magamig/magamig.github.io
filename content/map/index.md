@@ -10,9 +10,10 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 <script>
-    const visited = ["PRT","ESP","LUX","ITA","HUN","MKD","KOS","SVK","POL","BIH",
+    const visited = ["PRT","ESP","LUX","ITA","HUN", "MKD","KOS","SVK","POL","BIH",
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
-        "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST","MCO"];
+        "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST","MCO",
+        "TUN"];
     const selectedLabel = document.getElementById("selectedLabel");
     let w = 900,
         h = 480,
