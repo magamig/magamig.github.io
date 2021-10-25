@@ -58,7 +58,9 @@
 <article><header id="post-header">
             <h1>Beers</h1></header><p>As a beer enthusiast, I&rsquo;ve collected a list of all the different beers I&rsquo;ve had within an app called <a href="https://untappd.com/user/magamig/beers" target="_blank">Untappd</a>. If you think this list is incomplete, you can help by suggesting other brews!</p>
 <p>My latest beers were the following (up-to-date in real time):</p>
-<div id="beers-list"></div>
+<div id="beers-list">
+<p><img src="/image/beer.gif" alt=""></p>
+</div>
 <p><strong><a href="https://untappd.com/user/magamig/beers" target="_blank">Click here to check out the rest of the list!</a></strong></p>
 <script>
 fetch('https://wrapapi.com/use/magamig/untappd/distinct-list/1.0.1?wrapAPIKey=k00sa6Ado2F792ICOvLywRTOubqS8T7r')
@@ -67,6 +69,7 @@ fetch('https://wrapapi.com/use/magamig/untappd/distinct-list/1.0.1?wrapAPIKey=k0
         data = raw["data"]["collection"]
         console.log(data)
         var div = document.getElementById("beers-list");
+        div.innerHTML = "";
         for(i=0;i<10; i++) {
             div.innerHTML += "<div style=\"min-height: 120px;\">"
                 + "<img src=\"" + data[i]["image"] + "\" width=\"100px\" style=\"float:left;\">"
