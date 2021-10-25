@@ -362,6 +362,10 @@ td {
     padding-right: 1em;
 }
 
+th {
+    text-align: left;
+}
+
 @media (max-width: 991px) {
     body {
         padding: 2em;

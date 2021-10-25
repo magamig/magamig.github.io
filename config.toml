@@ -20,14 +20,21 @@ math= "true"
     name = "Posts"
     title = "Posts"
     url = "/posts/"
-    weight = 10
+    weight = 1
 
   [[menu.main]]
     identifier = "map"
     name = "Map"
     title = "Map"
     url = "/map/"
-    weight = 12
+    weight = 5
+  
+  [[menu.main]]
+    identifier = "beers"
+    name = "Beers"
+    title = "Beers"
+    url = "/beers/"
+    weight = 10
   
   # [[menu.main]]
   #   identifier = "photos"
