@@ -15,21 +15,20 @@ My latest beers were the following (up-to-date in real time):
 **[Click here to check out the rest of the list!](https://untappd.com/user/magamig/beers)**
 
 <script>
-fetch('https://wrapapi.com/use/magamig/untappd/distinct-list/1.0.1?wrapAPIKey=k00sa6Ado2F792ICOvLywRTOubqS8T7r')
+fetch('https://api.untappd.com/v4/user/beers/magamig?client_id=C1F3540111F2A6C0F2E1964C243FB66AB620FCBB&client_secret=0FCC3B5993CB80F43038D7BA914E1E3615600577&limit=10')
     .then(response => response.json())
     .then(raw => {
-        data = raw["data"]["collection"]
-        console.log(data)
+        data = raw["response"]["beers"]["items"]
         var div = document.getElementById("beers-list");
         div.innerHTML = "";
         for(i=0;i<10; i++) {
             div.innerHTML += "<div style=\"min-height: 120px;\">"
-                + "<img src=\"" + data[i]["image"] + "\" width=\"100px\" style=\"float:left;\">"
+                + "<img src=\"" + data[i]["beer"]["beer_label"] + "\" width=\"100px\" style=\"float:left;\">"
                 + "<div style='margin-left:120px;'>"
-                + "<b>" + data[i]["name"] + "</b> "
-                + "(" + data[i]["abv"] + ")<br/>"
-                + data[i]["style"] + "<br/>"
-                + data[i]["brewery"] + "<br/><br/>"
+                + "<b>" + data[i]["beer"]["beer_name"] + "</b> "
+                + "(" + data[i]["beer"]["beer_abv"] + "% ABV)<br/>"
+                + data[i]["beer"]["beer_style"] + "<br/>"
+                + data[i]["brewery"]["brewery_name"] + "<br/><br/>"
                 + "</div></div>"
         }
     })
