@@ -4,7 +4,7 @@ title: "Beers"
 
 As a beer enthusiast, I've collected a list of all the different beers I've had within an app called [Untappd](https://untappd.com/user/magamig/beers). If you think this list is incomplete, you can help by suggesting other brews! 
 
-My latest beers were the following (up-to-date in real time):
+My latest distinct beers were the following (up-to-date in real time):
 
 <div id="beers-list">
 

@@ -2,7 +2,7 @@
 title: "Map"
 ---
 
-I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN" class="interactive">Hungary</span>, <span id="FIN" class="interactive">Finland</span>, and I'm currently based in <span id="FRA" class="interactive">France</span>. Below is the map with the countries I've visited.
+I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN" class="interactive">Hungary</span>, <span id="FIN" class="interactive">Finland</span>, <span id="FRA" class="interactive">France</span>, and I'm currently based in <span id="BEL" class="interactive">Belgium</span>. Below is the map with the countries I've visited.
 
 <i><span id="selectedLabel">&nbsp;</span></i>
 <div id="map"></div>
@@ -13,7 +13,7 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
     const visited = ["PRT","ESP","LUX","ITA","HUN", "MKD","KOS","SVK","POL","BIH",
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
         "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST","MCO",
-        "TUN"];
+        "TUN", "BEL"];
     const selectedLabel = document.getElementById("selectedLabel");
     let w = 900,
         h = 480,
