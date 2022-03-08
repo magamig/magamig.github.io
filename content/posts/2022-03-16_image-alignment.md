@@ -6,7 +6,7 @@ location: "Belgium"
 
 ![](/image/las_meninas_input.jpg)
 
-The image alignment and registration pipeline takes two input images that contain the same scene from slightly different viewing angles. The picture above displays both input images side by side with the common scene (object) being the painting *[Las Meninas](https://www.museodelprado.es/en/the-collection/art-work/las-meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f)* (1656) by Velázquez, currently at the [Museo del Prato](https://www.museodelprado.es/en) in Madrid (Spain).
+The image alignment and registration pipeline takes two input images that contain the same scene from slightly different viewing angles. The picture above displays both input images side by side with the common scene (object) being the painting *[Las Meninas](https://www.museodelprado.es/en/the-collection/art-work/las-meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f)* (1656) by Velázquez, currently at the [Museo del Prado](https://www.museodelprado.es/en) in Madrid (Spain).
 
 The first step is computing the projection that establishes the mathematical relationships which maps pixel coordinates from one image to another [^1]. The most general planar 2D transformation is the eight-parameter perspective transform or homography denoted by a general $ 3×3 $ matrix $ \mathbf{H} $. It operates on 2D homogeneous coordinate vectors, $\mathbf{x'} = (x',y',1)$ and $\mathbf{x} = (x,y,1)$, as follows:
 

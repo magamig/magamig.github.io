@@ -17,7 +17,7 @@
       <pubDate>Fri, 07 Jan 2022 21:00:00 +0100</pubDate>
       
       <guid>https://magamig.github.io/posts/accurate-image-alignment-and-registration-using-opencv/</guid>
-      <description>The image alignment and registration pipeline takes two input images that contain the same scene from slightly different viewing angles. The picture above displays both input images side by side with the common scene (object) being the painting Las Meninas (1656) by Velázquez, currently at the Museo del Prato in Madrid (Spain).
+      <description>The image alignment and registration pipeline takes two input images that contain the same scene from slightly different viewing angles. The picture above displays both input images side by side with the common scene (object) being the painting Las Meninas (1656) by Velázquez, currently at the Museo del Prado in Madrid (Spain).
 The first step is computing the projection that establishes the mathematical relationships which maps pixel coordinates from one image to another 1.</description>
     </item>
     
