@@ -6,9 +6,21 @@
     <description>Recent content on Miguel Magalhães</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 06 Oct 2021 21:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jan 2022 21:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://magamig.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>Accurate Image Alignment and Registration using OpenCV</title>
+      <link>https://magamig.github.io/posts/accurate-image-alignment-and-registration-using-opencv/</link>
+      <pubDate>Fri, 07 Jan 2022 21:00:00 +0100</pubDate>
+      
+      <guid>https://magamig.github.io/posts/accurate-image-alignment-and-registration-using-opencv/</guid>
+      <description>The image alignment and registration pipeline takes two input images that contain the same scene from slightly different viewing angles. The picture above displays both input images side by side with the common scene (object) being the painting Las Meninas (1656) by Velázquez, currently at the Museo del Prato in Madrid (Spain).
+The first step is computing the projection that establishes the mathematical relationships which maps pixel coordinates from one image to another 1.</description>
+    </item>
     
     
     
@@ -104,7 +116,7 @@ As I&amp;rsquo;ve previously mentioned, it is important to define some guideline
       <guid>https://magamig.github.io/posts/hello-world/</guid>
       <description>Let&amp;rsquo;s start with the computer programming cliché phrase:
 &amp;gt; Hello, World
-It&amp;rsquo;s 2021 and I&amp;rsquo;m currently living in France as a grad student in a computer science program. &amp;ldquo;Inspired by the French writers Victor Hugo, Voltaire, and Gustave Flaubert, I&amp;rsquo;ve decided to start my blog!&amp;quot; - not really, but I admit it would be cooler. This will be the place to share my personal projects, ideas, and experiences.
+It&amp;rsquo;s 2021 and I&amp;rsquo;m currently living in France as a grad student in a computer science program. &amp;ldquo;Inspired by the French writers Victor Hugo, Voltaire, and Gustave Flaubert, I&amp;rsquo;ve decided to start my blog!&amp;rdquo; - not really, but I admit it would be cooler. This will be the place to share my personal projects, ideas, and experiences.
 Before starting any project, such as this blog, I think it is important to define what you want to achieve, your goals.</description>
     </item>
     

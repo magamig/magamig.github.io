@@ -366,6 +366,14 @@ th {
     text-align: left;
 }
 
+details {
+    padding-top: 16px;
+}
+
+summary {
+    font-weight: bold;
+}
+
 @media (max-width: 991px) {
     body {
         padding: 2em;
@@ -411,3 +419,12 @@ th {
         max-width: 1050px;
     }
 }
+
+@media print {
+    header#banner {
+        display: none;
+    }
+    body {
+        border-top: none;
+    }
+} 
