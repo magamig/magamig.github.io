@@ -1,6 +1,6 @@
 ---
 title: "Accurate Image Alignment and Registration using OpenCV"
-date: 2022-01-07T21:00:00+01:00
+date: 2022-03-08T21:00:00+01:00
 location: "Belgium"
 ---
 
@@ -16,7 +16,7 @@ Afterwards, we take the homographic matrix and use it to warp the perspective of
 
 ## Feature Detection
 
-To computer the perspective transform matrix $ \mathbf{H} $, we need the link both input images and assess which regions are the same. We could manually select the corners of each painting and use that to compute the homography, however this method has several problems: the corners of a painting could be occluded in one of the scenes, not all scenes are rectangular paintings so this would not be suitable for those cases, and it would require manual work per scene, which is not ideal if want to process numerous scenes in an automatic manner.
+To compute the perspective transform matrix $ \mathbf{H} $, we need the link both input images and assess which regions are the same. We could manually select the corners of each painting and use that to compute the homography, however this method has several problems: the corners of a painting could be occluded in one of the scenes, not all scenes are rectangular paintings so this would not be suitable for those cases, and it would require manual work per scene, which is not ideal if want to process numerous scenes in an automatic manner.
 
 Therefore, a feature detection and matching process is used to link common regions in both images. The only limitation of this technique is that the scene must include *enough* features evenly distributed. The used method here was ORB [^2], but other feature extraction methods are also available --- the code of the class <code>FeatureExtraction</code> is presented at the end of the post for brevity.
 

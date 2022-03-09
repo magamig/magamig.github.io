@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Miguel Magalhães</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 07 Jan 2022 21:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 08 Mar 2022 21:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://magamig.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Accurate Image Alignment and Registration using OpenCV</title>
       <link>https://magamig.github.io/posts/accurate-image-alignment-and-registration-using-opencv/</link>
-      <pubDate>Fri, 07 Jan 2022 21:00:00 +0100</pubDate>
+      <pubDate>Tue, 08 Mar 2022 21:00:00 +0100</pubDate>
       
       <guid>https://magamig.github.io/posts/accurate-image-alignment-and-registration-using-opencv/</guid>
       <description>The image alignment and registration pipeline takes two input images that contain the same scene from slightly different viewing angles. The picture above displays both input images side by side with the common scene (object) being the painting Las Meninas (1656) by Velázquez, currently at the Museo del Prado in Madrid (Spain).
