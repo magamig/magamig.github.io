@@ -1,118 +1,10 @@
-<!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="https://magamig.github.io/favicon.ico">
-    
-    <link rel="stylesheet" href="/css/style.min.css">
-
-    <title>Crossing an Entire Country in a Straight Line</title>
-
-    
-    <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"magamig",utcoffset:"1"}))};sessionStorage.setItem("_swa","1");</script>
-
-    
-    <meta name="google-site-verification" content="oOj7T7YgBib7EQmE1PWwWTP1DmyTTUxA3yTfPPzVf5s" />
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.css" integrity="sha384-L+Gq2Cso/Y2x8fX4wausgiZT8z0QPZz7OqPuz4YqAycQJyrJT9NRLpjFBD6zlOia" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.js" integrity="sha384-z64WtjpyrKFsxox9eI4SI8eM9toXdoYeWb5Qh+8PO+eG54Bv9BZqf9xNhlcLf/sA" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '\\[', right: '\\]', display: true},{left: '$', right: '$', display: false},{left: '\\(', right: '\\)', display: false}]});"></script>
-</head>
-<body>
-        <div class="container"><header id="banner">
-    <h2><a href="https://magamig.github.io/">Miguel Magalhães</a></h2>
-    <nav>
-        <ul>
-            
-            <li>
-                
-                
-                
-                »
-                <a href="/posts/" title="Posts">Posts</a>
-            </li><li>
-                
-                
-                
-                
-                <a href="/map/" title="Map">Map</a>
-            </li><li>
-                
-                
-                
-                
-                <a href="/beers/" title="Beers">Beers</a>
-            </li><li>
-                
-                
-                
-                
-                <a href="/about/" title="About">About</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main id="content">
-<article><header id="post-header">
-            <h1>Crossing an Entire Country in a Straight Line</h1><time>
-                    July 24, 2021
-                    · Monaco</time></header><!-- leaflet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-<!-- leaflet-fullscreen -->
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-<!-- leaflet-draw (dependency) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js"></script>
-<!-- leaflet-measurecontrol -->
-<link rel="stylesheet" href="https://makinacorpus.github.io/Leaflet.MeasureControl/leaflet.measurecontrol.css">
-<script src="https://cdn.jsdelivr.net/npm/leaflet.measurecontrol@1.1.0/leaflet.measurecontrol.min.js"></script>
-<p><img src="/image/monaco.jpg" alt=""></p>
-<p>Recently, I&rsquo;ve crossed an entire country in a straight line. &ldquo;Why?&rdquo;, you might ask&hellip; why not? Inspired by <a href="https://www.atlasobscura.com/articles/geowizard-davies-straight-line-mission-across" target="_blank">Tom Davies</a> (aka <a href="https://www.youtube.com/channel/UCW5OrUZ4SeUYkUg1XqcjFYA" target="_blank">GeoWizard</a>), I decided to go on this harmless challenge across&hellip; Monaco! Not as exciting as Tom&rsquo;s missions across Norway or Wales, but good enough as an adventure.</p>
-<p>Before embarking on this trip, some planning had to be done. Since Monaco is a small country, we had to cross a small distance. Nevertheless, it&rsquo;s very mountainous and full of buildings everywhere, which makes the straigh line part of the challenge complex. The strategy used to approach this challenge was to go on Google Maps and drop two pins one for start and stop and moving them around until we converged to an adequate path. After having this pre-planned route it was time to draw the <strong>actual line</strong> (in green below) and then try to stick as closer as possible to it.</p>
-<div id="xsmap"></div>
-<p>Due to the difficulties presented by the terrain and the constructions, the plan was to make use of the &ldquo;man-made facilities&rdquo; to go accross the country - a combination of several of these, aligned in a straight line, was necessary to viabilize the selected route.</p>
-<p>Since I arrived by train, that matched my start point for this challenge. The first step was to go up the escalators and go in direction of France, which meant starting to the parking lot - it is already within France and did not require me to leave and go around the train station. Then, you just go in the direction of the sea and take the elevator, in order not to ruin your precious straight line. Afterwards, you have some stairs. Later, a charming &ldquo;slightly curved&rdquo; walk around Chapelle Sainte-Dévote. Then, you cross the road in an illegal manner right near the crosswalk. And finally, there is an underpass that keeps you as close as possible to the line, without the need to do some <em>parkour</em>, which leads you to part of the F1 race track right near the marina - after all, it&rsquo;s Monaco!</p>
-<p>This path is drawn in blue on the map above. You can use the ruler to make some measurements; I&rsquo;ve used to measure my maximum distance from the line - which was 20 meters, a 🏆 <strong>Platinum rank</strong>.</p>
-<div class="info">
-<p><strong>Tom&rsquo;s Ranking</strong></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>🏆   </td>
-<td><strong>Platinum</strong>  </td>
-<td><strong>&lt; 25 meters</strong></td>
-</tr>
-<tr>
-<td>🥇</td>
-<td>Gold</td>
-<td>&lt; 50 meters</td>
-</tr>
-<tr>
-<td>🥈</td>
-<td>Silver</td>
-<td>&lt; 75 meters</td>
-</tr>
-<tr>
-<td>🥉</td>
-<td>Bronze</td>
-<td>&lt; 100 meters</td>
-</tr>
-</tbody>
-</table>
-<br/>
-</div>
-<script type="module">
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=https://magamig.github.io/favicon.ico><link rel=stylesheet href=/css/style.min.css><title>Crossing an Entire Country in a Straight Line</title><script>!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!==0&&fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"magamig",utcoffset:"1"})),sessionStorage.setItem("_swa","1")</script><meta name=google-site-verification content="oOj7T7YgBib7EQmE1PWwWTP1DmyTTUxA3yTfPPzVf5s"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.css integrity=sha384-L+Gq2Cso/Y2x8fX4wausgiZT8z0QPZz7OqPuz4YqAycQJyrJT9NRLpjFBD6zlOia crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.js integrity=sha384-z64WtjpyrKFsxox9eI4SI8eM9toXdoYeWb5Qh+8PO+eG54Bv9BZqf9xNhlcLf/sA crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/contrib/auto-render.min.js integrity=sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script></head><body><div class=container><header id=banner><h2><a href=https://magamig.github.io/>Miguel Magalhães</a></h2><nav><ul><li>»
+<a href=/posts/ title=Posts>Posts</a></li><li><a href=/map/ title=Map>Map</a></li><li><a href=/beers/ title=Beers>Beers</a></li><li><a href=/about/ title=About>About</a></li></ul></nav></header><main id=content><article><header id=post-header><h1>Crossing an Entire Country in a Straight Line</h1><time>July 24, 2021
+· Monaco</time></header><link rel=stylesheet href=https://unpkg.com/leaflet@1.7.1/dist/leaflet.css integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin><script src=https://unpkg.com/leaflet@1.7.1/dist/leaflet.js integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin></script>
+<script src=https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js></script>
+<link href=https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css rel=stylesheet><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.css><script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.3.2/leaflet.draw.js></script>
+<link rel=stylesheet href=https://makinacorpus.github.io/Leaflet.MeasureControl/leaflet.measurecontrol.css><script src=https://cdn.jsdelivr.net/npm/leaflet.measurecontrol@1.1.0/leaflet.measurecontrol.min.js></script><p><img src=/image/monaco.jpg alt></p><p>Recently, I&rsquo;ve crossed an entire country in a straight line. &ldquo;Why?&rdquo;, you might ask&mldr; why not? Inspired by <a href=https://www.atlasobscura.com/articles/geowizard-davies-straight-line-mission-across target=_blank>Tom Davies</a> (aka <a href=https://www.youtube.com/channel/UCW5OrUZ4SeUYkUg1XqcjFYA target=_blank>GeoWizard</a>), I decided to go on this harmless challenge across&mldr; Monaco! Not as exciting as Tom&rsquo;s missions across Norway or Wales, but good enough as an adventure.</p><p>Before embarking on this trip, some planning had to be done. Since Monaco is a small country, we had to cross a small distance. Nevertheless, it&rsquo;s very mountainous and full of buildings everywhere, which makes the straigh line part of the challenge complex. The strategy used to approach this challenge was to go on Google Maps and drop two pins one for start and stop and moving them around until we converged to an adequate path. After having this pre-planned route it was time to draw the <strong>actual line</strong> (in green below) and then try to stick as closer as possible to it.</p><div id=xsmap></div><p>Due to the difficulties presented by the terrain and the constructions, the plan was to make use of the &ldquo;man-made facilities&rdquo; to go accross the country - a combination of several of these, aligned in a straight line, was necessary to viabilize the selected route.</p><p>Since I arrived by train, that matched my start point for this challenge. The first step was to go up the escalators and go in direction of France, which meant starting to the parking lot - it is already within France and did not require me to leave and go around the train station. Then, you just go in the direction of the sea and take the elevator, in order not to ruin your precious straight line. Afterwards, you have some stairs. Later, a charming &ldquo;slightly curved&rdquo; walk around Chapelle Sainte-Dévote. Then, you cross the road in an illegal manner right near the crosswalk. And finally, there is an underpass that keeps you as close as possible to the line, without the need to do some <em>parkour</em>, which leads you to part of the F1 race track right near the marina - after all, it&rsquo;s Monaco!</p><p>This path is drawn in blue on the map above. You can use the ruler to make some measurements; I&rsquo;ve used to measure my maximum distance from the line - which was 20 meters, a 🏆 <strong>Platinum rank</strong>.</p><div class=info><p><strong>Tom&rsquo;s Ranking</strong></p><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td>🏆  </td><td><strong>Platinum</strong>  </td><td><strong>&lt; 25 meters</strong></td></tr><tr><td>🥇</td><td>Gold</td><td>&lt; 50 meters</td></tr><tr><td>🥈</td><td>Silver</td><td>&lt; 75 meters</td></tr><tr><td>🥉</td><td>Bronze</td><td>&lt; 100 meters</td></tr></tbody></table><br></div><script type=module>
 (async () => {
 	const map = L.map('xsmap').setView([51.505, -0.09], 13);
 	map.addControl(new L.Control.Fullscreen());
@@ -135,12 +27,4 @@
 		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 })();
-</script>
-</article>
-
-            </main><footer id="footer">
-    
-</footer>
-<div>
-    </body>
-</html>
+</script></article></main><footer id=footer></footer><div></body></html>
