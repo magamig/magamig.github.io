@@ -13,8 +13,8 @@ I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN"
     const visited = ["PRT","ESP","LUX","ITA","HUN", "MKD","KOS","SVK","POL","BIH",
         "HRV","SVN","SRB","FRA","DEU","AUT","CZE","UKR","MDA","ROU","BGR","ALB",
         "MNE","CHL","GBR","VAT","DNK","SWE","CHE","IND","LKA","FIN","EST","MCO",
-        "TUN", "BEL", "GRC", "NLD"];
-    const selectedLabel = document.getElementById("selectedLabel");
+        "TUN", "BEL", "GRC", "NLD", "IRL"];
+    const selectedLabel = document.getElementById("s~electedLabel");
     let w = 900,
         h = 480,
         projection = d3.geoLarrivee().translate([w/2.15, h/2.85]).scale(145).center([0,45]);
