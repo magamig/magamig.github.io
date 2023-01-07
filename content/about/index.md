@@ -5,7 +5,7 @@ hidetitle: true
 
 ![](/image/me_cropped.jpg#me)
 
-Currently studying [IMLEX Computational Imaging MSc](https://imlex.org/) at KU Leuven in Belgium. Using this blog to put things into writing. My topics of interest revolve around images and maps. 
+Currently working at [Microsoft](https://www.microsoft.com/) in Ireland. Using this blog to put things into writing. My topics of interest revolve around images and maps. 
 
 When I'm not in front of a screen, I'm probably motorcycling, playing music at [TUM](https://www.facebook.com/tunauniversitariaminho), walking in the woods, or having a [beer](/beers/) with friends.
 
