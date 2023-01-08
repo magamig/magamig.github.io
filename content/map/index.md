@@ -2,7 +2,7 @@
 title: "Map"
 ---
 
-I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN" class="interactive">Hungary</span>, <span id="FIN" class="interactive">Finland</span>, <span id="FRA" class="interactive">France</span>, and I'm currently based in <span id="BEL" class="interactive">Belgium</span>. Below is the map with the countries I've visited.
+I've lived in <span id="PRT" class="interactive">Portugal</span>, <span id="HUN" class="interactive">Hungary</span>, <span id="FIN" class="interactive">Finland</span>, <span id="FRA" class="interactive">France</span>, <span id="BEL" class="interactive">Belgium</span>,and I'm currently based in <span id="IRL" class="interactive">Ireland</span>. Below is the map with the countries I've visited.
 
 <i><span id="selectedLabel">&nbsp;</span></i>
 <div id="map"></div>
