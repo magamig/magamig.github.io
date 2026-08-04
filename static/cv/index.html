@@ -11,18 +11,36 @@
     <section id="main">
       <header id="title">
         <h1>Miguel <b>Magalhaes</b></h1>
-        <span class="subtitle">Senior Sofware Engineer</span>
+        <span class="subtitle">Senior Software Engineer &middot; Observability &amp; Distributed Systems</span>
         <p>
           <i class="fa fa-at"></i> <a href="mailto:magamig@gmail.com">magamig@gmail.com</a> <br/>
           <i class="fa fa-phone"></i> <a href="tel:+353892645491">(+353) 89 264 5491</a> <br/>
           <i class="fa fa-globe"></i> <a href="https://magamig.github.io/">magamig.github.io</a> <br/>
+          <i class="fa fa-map-marker-alt"></i> Dublin, Ireland <br/>
           <i class="fa fa-language"></i> English / Portuguese / Spanish <br/>
           <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/magamig/">linkedin.com/in/magamig</a> <br/>
         </p>
         <p>
-          Versatile goal-oriented software engineer, experienced in the development of complex software applications. Currently leveraging my skills as a Senior Infrastructure Software Engineer at Microsoft, within the Azure Observability organization. Working on the Infrastructure of a planetary scale, high availability, distributed system for the near real-time Metrics platform which provides monitoring and analytics across all of Microsoft. Avid participant in the tech community: organizer of DjangoCon Europe, founder of PyCon Portugal, and member of the EuroPython Society and Django Software Foundation. Available for relocation.
+          Senior software engineer specializing in observability and large-scale distributed systems. Within Microsoft's Azure Observability organization, I build and operate the C#/.NET infrastructure behind a geo-redundant, highly available, near real-time Metrics platform that ingests billions of events per second and serves hundreds of billions of time series for monitoring and analytics across all of Microsoft. I thrive on hard distributed-systems problems: high availability, safe large-scale deployments, automated remediation, and                     debugging production issues at massive scale. Founder of PyCon Portugal and organizer of DjangoCon Europe.
         </p>
       </header>
+      <section class="main-block concise">
+        <h2><i class="fa fa-code"></i> Technical Skills</h2>
+        <section class="blocks">
+          <div class="date"></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <div class="concise">
+              <ul style="columns: 1; -webkit-columns: 1; -moz-columns: 1;">
+                <li><b>Languages:</b> C#/.NET, Python, KQL, PowerShell, JavaScript</li>
+                <li><b>Distributed systems:</b> high availability, near real-time telemetry, fault tolerance, automated remediation</li>
+                <li><b>Observability:</b> metrics ingestion &amp; analytics, monitoring, alerting, telemetry pipelines</li>
+                <li><b>Cloud &amp; infra:</b> Azure (VMSS, Service Fabric, Storage, Networking, ARM), infrastructure-as-code, CI/CD, Safe Deployment Practices</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
       <section class="main-block">
         <h2><i class="fa fa-suitcase"></i> Experience</h2>
         <section class="blocks">
@@ -36,10 +54,12 @@
             </header>
             <div>
               <ul>
-                <li>Infrastructure engineer of a planetary scale, high availability, distributed system for the near real-time Metrics platform which provides monitoring and analytics across all of Microsoft.</li>
-                <li>Design, development, and execution of the Metrics Service infrastructure layer migration from Cloud Services Extended Support (CSES) to Virtual Machine Scale Sets (VMSS). This resulted in the recreation of millions of VM cores in Azure alongside the networking and storage resources.</li>  
-                <li>Implementation of constant automated infrastructure repair workflows over hundreds of thousands of VMs while incorporating throttling mechanisms.</li>  
-                <li>Orchestration of continuous large-scale deployment cycles following Safe Deployment Practices (SDP) with configuration as code, pre- and post- validation health checks, and automated rollbacks.</li>  
+                <li>Build and operate the C#/.NET infrastructure layer of the Metrics platform, which ingests billions of events per second and serves hundreds of billions of time series across all of Microsoft, spanning the ingestion, storage, and query layers.</li>
+                <li>Led the live migration of the Geneva Monitoring fleet from Cloud Services (CSES) to Virtual Machine Scale Sets (VMSS), moving hundreds of thousands of CPU cores to next-generation infrastructure with no customer-facing downtime.</li>
+                <li>Executed a zero-downtime Service Fabric runtime upgrade across hundreds of clusters to meet a FedRAMP requirement, and re-architected cluster topology to deliver ~$1M in annual savings while preserving the highest reliability tier.</li>
+                <li>Built active deployment monitoring and automated remediation that cut deployment failures by 80%. Enabled auto-triage of 95% of incidents to the owning team, reducing time-to-detection and on-call load.</li>
+                <li>Designed and implemented an automated infrastructure-repair service that detects unhealthy VMs and orchestrates safe, throttled repair actions (e.g., reimage and redeploy) to continuously self-heal the fleet, sustaining reliability while reducing manual operational toil and on-call intervention.</li>
+                <li>As build SME for a monorepo where 100+ engineers collaborate across two organizations, removed legacy CoreXT tooling and modernized tens of services from .NET Framework 4.8 to .NET 10, adopting Central Package Management to accelerate security-patch propagation.</li>
               </ul>
             </div>
           </div>
@@ -49,14 +69,14 @@
           <div class="decorator"></div>
           <div class="details">
             <header>
-              <h3>Software Engineer</h3>
+              <h3>Senior Software Engineer</h3>
               <span class="place">Evolutio</span>
               <span class="location">Porto, Portugal</span>
             </header>
             <div>
               <ul>
-                <li>Application of image processing and computer vision techniques to big data sets.</li>
-                <li>Development of web applications focused on geographical data representations.</li>
+                <li>Applied image processing and computer vision techniques to large-scale datasets, building automated pipelines to extract insights from big data.</li>
+                <li>Designed and developed web applications for interactive geographical data representation and visualization.</li>
               </ul>
             </div>
           </div>
@@ -89,8 +109,9 @@
             </header>
             <div>
               <ul>
-                <li>Responsible for the development of web data-intensive applications for the real estate market.</li>
-                <li>Trained on market data, indices, statistics and other methodologies applicable to real estate information analysis.</li>
+                <li>Developed and maintained data-intensive web applications powering real estate market indices, statistics, and analytics.</li>
+                <li>Built data ingestion and processing pipelines to transform raw market data into reliable, queryable insights.</li>
+                <li>Applied real estate methodologies, indices, and statistical models to deliver accurate market information analysis.</li>
               </ul>
             </div>
           </div>
@@ -119,17 +140,12 @@
             </header>
             <div class="concise">
               <ul>
-                <li>Color science & advanced spectral imaging</li>
-                <li>Physical optics & photonics</li>
-                <li>Real-time 3D visualization</li> 
-                <li>Eye tracking</li>
-                <li>Complex computer rendering methods</li> 
-                <li>Real-time GPU image processing</li> 
-                <li>Machine learning & deep learning</li>
-                <li>Computer vision</li>
-                <li>3D vision computation</li>
+                <li>Color science &amp; spectral imaging</li>
+                <li>Real-time GPU image processing</li>
+                <li>Machine learning &amp; computer vision</li>
+                <li>3D visualization &amp; rendering</li>
               </ul>
-              Recipient of a full-scholarship from the European Comission.
+              Recipient of a full scholarship from the European Commission.
             </div>
           </div>
         </section>
@@ -144,15 +160,10 @@
             </header>
             <div class="concise">
               <ul>
-                <li>Imperative, functional and OOP programming</li>
-                <li>Algorithms, complexity analysis & data structures</li>
-                <li>Mathematics & physics</li>
-                <li>Operating systems & compilers</li> 
-                <li>Computer graphics</li>
-                <li>Databases</li> 
-                <li>Computer networks</li> 
-                <li>Data science & machine learning</li> 
-                <li>Computer architecture</li>
+                <li>Algorithms, complexity &amp; data structures</li>
+                <li>Imperative, functional &amp; OOP programming</li>
+                <li>Operating systems &amp; compilers</li>
+                <li>Databases, networks &amp; architecture</li>
               </ul>
               Final grade: A
             </div>
